@@ -17,8 +17,12 @@ loaders.load('../assets/house.glb', function (glb) {
 });
 
 const light = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(2, 2, 5);
+light.position.set(-1, -1, 10);
 scene.add(light);
+
+const light2 = new THREE.AmbientLight(0xffffff, 1);
+light.position.set(-5, -5, 1)
+scene.add(light2);
 
 const sizes = {
   width: window.innerWidth,
