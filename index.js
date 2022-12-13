@@ -51,7 +51,7 @@ const light2 = new THREE.PointLight(0xffffff, 0.5);
 light2.position.set(-20, 2, 20);
 scene.add(light2);
 
-// scene.add(new THREE.PointLightHelper(light2));
+scene.add(new THREE.PointLightHelper(light2));
 
 const sizes = {
   width: window.innerWidth,
@@ -59,9 +59,12 @@ const sizes = {
 }
 
 const camera = new THREE.PerspectiveCamera(65, sizes.width / sizes.height, 0.1, 100);
-camera.position.set(0, 0.1, 2);
-camera.position.z = 2;
+camera.position.set(-2, 1.25,-2.5);
+// camera.position.z = 2;
 scene.add(camera);
+
+// const axesHelper = new THREE.AxesHelper(100);
+// scene.add(axesHelper);
 
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas
