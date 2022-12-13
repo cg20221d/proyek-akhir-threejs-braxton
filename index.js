@@ -47,13 +47,9 @@ scene.add(light);
 // light.position.set(-5, -5, 7)
 // scene.add(light3);
 
-const light2 = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(-20, 10, -20);
-scene.add(light2);
 
-// const loader = new THREE.TextureLoader();
-// const bgTexture = loader.load('https://r105.threejsfundamentals.org/threejs/resources/images/daikanyama.jpg');
-// scene.background = bgTexture;
+
+
 
 
 const sizes = {
