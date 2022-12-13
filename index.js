@@ -51,7 +51,7 @@ const light2 = new THREE.PointLight(0xffffff, 0.5);
 light2.position.set(-20, 2, 20);
 scene.add(light2);
 
-scene.add(new THREE.PointLightHelper(light2));
+// scene.add(new THREE.PointLightHelper(light2));
 
 const sizes = {
   width: window.innerWidth,
