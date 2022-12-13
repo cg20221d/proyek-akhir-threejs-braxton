@@ -1,0 +1,1 @@
+finalColour += colour *  ambient

@@ -31,26 +31,27 @@ mesh.rotation.x = - Math.PI / 2;
 mesh.receiveShadow = true;
 scene.add(mesh);
 
+scene.fog = new THREE.Fog(0xcce0ff, 5, 100);
+
 // sky
 const sky = new THREE.TextureLoader()
 const background = sky.load('./assets/sky.jpg');
 scene.background = background;
 
+// light.position.set(2, 8, 4);
 
-const light = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(30, 20, -20);
+const light = new THREE.DirectionalLight(0xffffff, 0.8);
+light.position.set(10, 20, -20);
 scene.add(light);
 
 
+// scene.add(new THREE.DirectionalLightHelper(light));
 
-// const light3 = new THREE.AmbientLight(0xffffff, 1);
-// light.position.set(-5, -5, 7)
-// scene.add(light3);
+const light2 = new THREE.PointLight(0xffffff, 0.5);
+light2.position.set(-20, 2, 20);
+scene.add(light2);
 
-
-
-
-
+// scene.add(new THREE.PointLightHelper(light2));
 
 const sizes = {
   width: window.innerWidth,
